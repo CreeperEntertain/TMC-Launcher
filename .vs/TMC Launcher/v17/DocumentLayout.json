@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TimGe\\Documents\\TMC Launcher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{163059E0-EDAB-4DD1-BD4C-CFB79279AF7B}|TMC Launcher\\TMC Launcher.csproj|c:\\users\\timge\\documents\\tmc launcher\\tmc launcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163059E0-EDAB-4DD1-BD4C-CFB79279AF7B}|TMC Launcher\\TMC Launcher.csproj|solutionrelative:tmc launcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TimGe\\Documents\\TMC Launcher\\TMC Launcher\\Program.cs",
+              "RelativeDocumentMoniker": "TMC Launcher\\Program.cs",
+              "ToolTip": "C:\\Users\\TimGe\\Documents\\TMC Launcher\\TMC Launcher\\Program.cs",
+              "RelativeToolTip": "TMC Launcher\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T08:27:55.596Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

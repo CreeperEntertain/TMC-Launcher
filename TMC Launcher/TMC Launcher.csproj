@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>TMC_Launcher</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<ApplicationIcon>TMCLauncher.ico</ApplicationIcon>
+    <PublishDir>$(OutputPath)</PublishDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="executableHash.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="executableHash.txt" />
+  </ItemGroup>
+
+  <Target Name="Cleanup" AfterTargets="Publish">
+	<Exec Command="del /Q &quot;$(PublishDir)TMC Launcher.pdb&quot;" />
+  </Target>
+</Project>
