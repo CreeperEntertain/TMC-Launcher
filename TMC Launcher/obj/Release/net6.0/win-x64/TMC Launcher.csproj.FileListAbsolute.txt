@@ -235,3 +235,4 @@ C:\Users\TimGe\Documents\TMC Launcher\TMC Launcher\obj\Release\net6.0\win-x64\re
 C:\Users\TimGe\Documents\TMC Launcher\TMC Launcher\obj\Release\net6.0\win-x64\TMC Launcher.pdb
 C:\Users\TimGe\Documents\TMC Launcher\TMC Launcher\obj\Release\net6.0\win-x64\TMC Launcher.genruntimeconfig.cache
 C:\Users\TimGe\Documents\TMC Launcher\TMC Launcher\obj\Release\net6.0\win-x64\ref\TMC Launcher.dll
+C:\Users\TimGe\Documents\TMC Launcher\TMC Launcher\obj\Release\net6.0\win-x64\TMC Launcher.sourcelink.json

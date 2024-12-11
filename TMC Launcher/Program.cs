@@ -8,14 +8,23 @@ namespace TMC_Launcher
         private static string fileHash = HashRetriever.String();
         private static bool externalFile = false;
 
+        private static string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        private static string storedAppDataPath = Path.Combine(appDataPath, "TMC Location");
+        
         private static string? currentDirectory;
         private static string? appExePath;
         static void Main(string[] args)
         {
-            if (!DoesConhostExist()) ConhostNotFound();
-
             currentDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule?.FileName ?? string.Empty) ?? "";
-            appExePath = Path.Combine(currentDirectory, "The Mighty Console.exe");
+
+            if (!DoesConhostExist())
+                ConhostNotFound();
+            if (!File.Exists(storedAppDataPath))
+            {
+                appExePath = Path.Combine(currentDirectory, "The Mighty Console.exe");
+                File.WriteAllText(storedAppDataPath, appExePath);
+            }
+            else appExePath = File.ReadAllText(storedAppDataPath);
 
             bool fileNotFoundLoop = true;
             bool isExeLoop = true;
@@ -69,7 +78,7 @@ namespace TMC_Launcher
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
-            if (!externalFile) Console.WriteLine("\"The Mighty Console.exe\" not found in same directory.");
+            if (!externalFile) Console.WriteLine("\"The Mighty Console.exe\" not found in expected directory.");
             else Console.WriteLine("File does not exist.");
             externalFile = true;
             NewFileRequest();
@@ -109,7 +118,8 @@ namespace TMC_Launcher
         {
             Console.WriteLine();
             Console.Write("Drag the executable in and press enter: ");
-            appExePath = (Console.ReadLine() ?? "").Replace("\"", "");
+            File.WriteAllText(storedAppDataPath, (Console.ReadLine() ?? "").Replace("\"", ""));
+            appExePath = File.ReadAllText(storedAppDataPath);
         }
     }
 }
