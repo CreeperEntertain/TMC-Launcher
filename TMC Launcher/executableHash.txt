@@ -1,3 +1,3 @@
 SHA256 hash of ..\..\The Mighty Console.exe:
-2222b0beb5c95a81cc9424f3ba0df41fc2f4c578f95d01c6bdd657f6281ca804
+eb54dd2fe4e2c30b99b57c47ce5754b8ad4ede1bd1db3b99026cdaed79415d2f
 CertUtil: -hashfile command completed successfully.

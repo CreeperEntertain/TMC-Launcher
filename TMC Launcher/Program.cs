@@ -8,15 +8,14 @@ namespace TMC_Launcher
         private static string fileHash = HashRetriever.String();
         private static bool externalFile = false;
 
+        private static string currentDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule?.FileName ?? string.Empty) ?? "";
+        private static string? appExePath;
+
         private static string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         private static string storedAppDataPath = Path.Combine(appDataPath, "TMC Location");
         
-        private static string? currentDirectory;
-        private static string? appExePath;
         static void Main(string[] args)
         {
-            currentDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule?.FileName ?? string.Empty) ?? "";
-
             if (!DoesConhostExist())
                 ConhostNotFound();
             if (!File.Exists(storedAppDataPath))

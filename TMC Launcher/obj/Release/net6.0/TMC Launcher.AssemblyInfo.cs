@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TMC Launcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84423418d82b1adc192608d4d7f5452d4296220e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+defc62553b5e66055caab9a2438aa38a18592785")]
 [assembly: System.Reflection.AssemblyProductAttribute("TMC Launcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TMC Launcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
