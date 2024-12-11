@@ -1,0 +1,3 @@
+# Instructions
+This launcher is intended to be used in tandem with [this](https://github.com/CreeperEntertain/The-Mighty-Console) project. To use it, place both project directories directly next to another. Upon publishing "The Mighty Console" with default settings, it will inject an SHA256 key into this project, which is used to compare the exact version. All you need to do for both projects to work properly is first publish "The Mighty Console" and then this launcher.
+The way this works is by utilizing post build steps with the Publish target. Both projects will produce a single file contained executable which doesn't require the user to have the .NET framework installed.
